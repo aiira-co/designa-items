@@ -1,0 +1,109 @@
+// Thumbnail
+.ad-thumbnail {
+    @extend .ad-item;
+
+    &.ad-button {
+        &>.ad-btn {
+            top: auto; // line-height: 58px;
+            margin-top: 20px;
+        }
+
+        &>.ad-btn-group {
+            top: auto;
+            margin-top: 20px;
+        }
+    }
+
+    &>.ad-index {
+        display: inline-block;
+        vertical-align: top;
+        width: 30px;
+        background-color: rgba(0, 0, 0, 0.1);
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        /* line-height: 100%; */
+        text-align: center;
+        line-height: 100px;
+
+        &+.ad-img,
+        &+img {
+            margin-left: 30px;
+        }
+    }
+
+    &>.ad-img {
+        display: inline-block;
+        vertical-align: top;
+        width: 70px;
+        height: 70px;
+        background: white;
+        margin: 0;
+        padding: 0;
+        margin-right: 16px;
+        border-radius: 3px;
+        overflow: hidden;
+        @include shadow(0, 1px, 2px, 2px, rgba(black, 0.1));
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &>img {
+        margin-right: 16px;
+        display: inline-block;
+        vertical-align: top; // background-color:$dark;
+        width: 70px;
+        height: 70px;
+        border-radius: 3px;
+        overflow: hidden;
+        @include shadow(0, 1px, 2px, 2px, rgba(black, 0.1));
+    }
+
+    &>h2 {
+        color: inherit;
+        display: inline-block;
+        vertical-align: top;
+        position: absolute;
+        margin: 0;
+        text-transform: none;
+        font-weight: normal;
+        font-size: $baseFontSize + 2;
+
+        &~p {
+            top: 20px;
+        }
+    }
+
+    &>p {
+        opacity: 0.6;
+        display: inline-block;
+        margin: 0;
+        padding: 0 !important;
+        position: relative;
+        left: 0;
+        max-width: 85%;
+        font-size: $baseFontSize - 2;
+    }
+
+    &.ad-block {
+
+        &>img,
+        &>.ad-img {
+            border-radius: 0;
+        }
+    }
+
+    &.ad-round {
+
+        &>img,
+        &>.ad-img {
+            border-radius: 8px;
+        }
+    }
+}

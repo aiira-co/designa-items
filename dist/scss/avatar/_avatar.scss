@@ -1,0 +1,103 @@
+ // Avatar
+ .ad-avatar {
+     @extend .ad-item;
+
+     &.ad-button {
+         &>.ad-btn {
+             top: auto;
+         }
+
+         &>.ad-btn-group {
+             top: auto;
+         }
+     }
+
+     &>img {
+         margin: 0;
+         margin-right: 16px;
+         display: inline-block;
+         vertical-align: top; // background-color:$dark;
+         height: 40px;
+         width: 40px;
+         border-radius: 50%;
+         overflow: hidden;
+         @include shadow(0px, 1px, 0.5px, 0.5px, rgba(black, 0.1));
+     }
+
+     &>.ad-img {
+         display: inline-block;
+         vertical-align: top;
+         width: 40px;
+         height: 40px; // background: white;
+         margin: 0;
+         padding: 0;
+         margin-right: 16px;
+         border-radius: 3px;
+         border-radius: 50%;
+         overflow: hidden;
+         @include shadow(0px, 1px, 0.5px, 0.5px, rgba(black, 0.1));
+         text-align: center;
+
+         &>img {
+             border-radius: 0;
+             width: 100%;
+         }
+
+         &.ad-icon-letter {
+             line-height: 40px;
+         }
+     }
+
+     &>h2 {
+         // color:$baseFontColor;
+         display: inline-block;
+         vertical-align: top;
+         margin: 0;
+         text-transform: none;
+         font-weight: normal;
+         position: absolute;
+         font-size: $baseFontSize;
+
+         &+p {
+             top: 20px;
+         }
+     }
+
+     &>p {
+         opacity: 0.6;
+         display: inline-block;
+         margin: 0;
+         padding: 0 !important;
+         position: relative;
+         left: 0;
+         max-width: 85%;
+         font-size: $baseFontSize - 2;
+     }
+
+     &.ad-block {
+
+         &>img,
+         &>.ad-img {
+             border-radius: 0;
+         }
+     }
+
+     &.ad-sm {
+         padding-top: 4px;
+         padding-bottom: 4px;
+
+         &>.ad-img {
+             width: 35px;
+             height: 35px;
+
+             &.ad-icon-letter {
+                 line-height: 35px;
+             }
+         }
+
+         &> {
+             width: 35px;
+             height: 35px;
+         }
+     }
+ }

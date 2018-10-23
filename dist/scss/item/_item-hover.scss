@@ -1,0 +1,39 @@
+.ad-item.ad-hover,
+.ad-avatar.ad-hover,
+.ad-thumbnail.ad-hover {
+    &.hover-prim {
+        @include itemHoverColor($prim);
+    }
+
+    &.hover-pink {
+        @include itemHoverColor($pink);
+    }
+
+    &.hover-tgreen {
+        @include itemHoverColor($tGreen);
+    }
+
+    &.hover-yellow {
+        @include itemHoverColor($yellow);
+    }
+
+    &.hover-blue {
+        @include itemHoverColor($blue);
+    }
+
+    &.hover-red {
+        @include itemHoverColor($red);
+    }
+
+    &.hover-green {
+        @include itemHoverColor($green);
+    }
+
+    &.hover-dark {
+        @include itemHoverColor($dark);
+    }
+
+    &.hover-white {
+        @include itemHoverColor(white);
+    }
+}

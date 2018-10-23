@@ -1,0 +1,76 @@
+//Lists
+.ad-list {
+    display: block;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    &.ad-hover {
+        .ad-item {
+            cursor: pointer;
+
+            &:after {
+                content: '';
+                position: absolute;
+                display: block;
+                bottom: 0;
+                left: 16px;
+                right: 100%; // width:0%;
+                height: 2px;
+                background-color: $prim;
+                @include transEase(0.3s);
+            }
+
+            &:hover {
+                &:after {
+                    right: 16px;
+                }
+            }
+        }
+
+        .ad-avatar:after,
+        .ad-thumbnail:after {
+            left: 74px; // right: 16px;
+        }
+    }
+
+    // Size
+    &.ad-sm {
+        .ad-item {
+            padding: 8px 16px !important;
+        }
+    }
+
+    // Shape
+    &.ad-flat {
+        .ad-item {
+            &:before {
+                background-color: transparent;
+            }
+        }
+    }
+
+    &.ad-round {
+        .ad-item {
+            border-radius: 30px;
+            margin: 3px;
+        }
+    }
+
+    // Color
+    &.ad-strip {
+        .ad-item {
+            &:nth-child(even) {
+                background-color: rgba($dark, 0.1);
+            }
+        }
+    }
+
+    &.ad-strip-white {
+        .ad-item {
+            &:nth-child(even) {
+                background-color: rgba(white, 0.1);
+            }
+        }
+    }
+}
