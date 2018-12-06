@@ -95,6 +95,44 @@
              }
          }
 
+         h2 {
+             font-size: 13px;
+             margin: 4px 0 0 0;
+         }
+
+         p {
+             //  margin-top:2px;
+         }
+
+         &> {
+             width: 35px;
+             height: 35px;
+         }
+     }
+
+     &.ad-xs {
+         padding-top: 4px;
+         padding-bottom: 4px;
+
+         &>.ad-img {
+             width: 30px;
+             height: 30px;
+
+             &.ad-icon-letter {
+                 line-height: 30px;
+             }
+         }
+
+         h2 {
+             font-size: 13px;
+             margin: 6px 0 0 0;
+         }
+
+         p {
+             //  margin-top:2px;
+             display: none;
+         }
+
          &> {
              width: 35px;
              height: 35px;

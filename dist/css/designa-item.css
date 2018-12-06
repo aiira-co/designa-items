@@ -5,6 +5,12 @@
 
 */
 /* BASE-- base, variables, mixins, normalize */
+:root {
+  --pure-designa-primary-rgb: 33, 150, 243;
+  --pure-designa-onprimary-rgb: 255, 255, 255;
+  --pure-designa-surface-rgb: 255, 255, 255;
+  --pure-designa-onsurface-rgb: 0, 0, 0; }
+
 /* COLORS PRESETS  */
 /* COLORS Buttons*/
 .ad-list {
@@ -22,7 +28,7 @@
       left: 16px;
       right: 100%;
       height: 2px;
-      background-color: #28d0ea;
+      background-color: #29d0e9;
       -webkit-transition: all 0.3s ease-out 0s;
       -moz-transition: all 0.3s ease-out 0s;
       -o-transition: all 0.3s ease-out 0s;
@@ -40,14 +46,14 @@
     border-radius: 30px;
     margin: 3px; }
   .ad-list.ad-strip .ad-item:nth-child(even), .ad-list.ad-strip .ad-avatar:nth-child(even), .ad-list.ad-strip .ad-thumbnail:nth-child(even) {
-    background-color: rgba(34, 44, 55, 0.1); }
+    background-color: rgba(27, 35, 44, 0.1); }
   .ad-list.ad-strip-white .ad-item:nth-child(even), .ad-list.ad-strip-white .ad-avatar:nth-child(even), .ad-list.ad-strip-white .ad-thumbnail:nth-child(even) {
     background-color: rgba(255, 255, 255, 0.1); }
 
 .ad-list.ad-hover.hover-prim .ad-item:after, .ad-list.ad-hover.hover-prim .ad-avatar:after, .ad-list.ad-hover.hover-prim .ad-thumbnail:after,
 .ad-list.ad-hover.hover-prim .ad-avatar:after,
 .ad-list.ad-hover.hover-prim .ad-thumbnail:after {
-  background-color: #28d0ea; }
+  background-color: #29d0e9; }
 .ad-list.ad-hover.hover-pink .ad-item:after, .ad-list.ad-hover.hover-pink .ad-avatar:after, .ad-list.ad-hover.hover-pink .ad-thumbnail:after,
 .ad-list.ad-hover.hover-pink .ad-avatar:after,
 .ad-list.ad-hover.hover-pink .ad-thumbnail:after {
@@ -75,7 +81,7 @@
 .ad-list.ad-hover.hover-dark .ad-item:after, .ad-list.ad-hover.hover-dark .ad-avatar:after, .ad-list.ad-hover.hover-dark .ad-thumbnail:after,
 .ad-list.ad-hover.hover-dark .ad-avatar:after,
 .ad-list.ad-hover.hover-dark .ad-thumbnail:after {
-  background-color: #222c37; }
+  background-color: #1b232c; }
 .ad-list.ad-hover.hover-white .ad-item:after, .ad-list.ad-hover.hover-white .ad-avatar:after, .ad-list.ad-hover.hover-white .ad-thumbnail:after,
 .ad-list.ad-hover.hover-white .ad-avatar:after,
 .ad-list.ad-hover.hover-white .ad-thumbnail:after {
@@ -101,7 +107,7 @@
     display: inline-block;
     margin: 0;
     padding: 0 !important;
-    font-size: 12px; }
+    font-size: 11px; }
   .ad-item:before, .ad-avatar:before, .ad-thumbnail:before {
     content: '';
     position: absolute;
@@ -121,7 +127,7 @@
       left: 16px;
       right: 100%;
       height: 2px;
-      background-color: #28d0ea;
+      background-color: #29d0e9;
       -webkit-transition: all 0.3s ease-out 0s;
       -moz-transition: all 0.3s ease-out 0s;
       -o-transition: all 0.3s ease-out 0s;
@@ -143,7 +149,7 @@
   .ad-item.ad-badge .badge, .ad-badge.ad-avatar .badge, .ad-badge.ad-thumbnail .badge {
     position: absolute;
     right: 16px;
-    font-size: 12px;
+    font-size: 11px;
     opacity: 0.7;
     color: inherit; }
     .ad-item.ad-badge .badge.clear, .ad-badge.ad-avatar .badge.clear, .ad-badge.ad-thumbnail .badge.clear {
@@ -184,7 +190,7 @@
 .ad-item.ad-hover.hover-prim:after, .ad-hover.hover-prim.ad-avatar:after, .ad-hover.hover-prim.ad-thumbnail:after,
 .ad-avatar.ad-hover.hover-prim:after,
 .ad-thumbnail.ad-hover.hover-prim:after {
-  background-color: #28d0ea; }
+  background-color: #29d0e9; }
 .ad-item.ad-hover.hover-pink:after, .ad-hover.hover-pink.ad-avatar:after, .ad-hover.hover-pink.ad-thumbnail:after,
 .ad-avatar.ad-hover.hover-pink:after,
 .ad-thumbnail.ad-hover.hover-pink:after {
@@ -212,7 +218,7 @@
 .ad-item.ad-hover.hover-dark:after, .ad-hover.hover-dark.ad-avatar:after, .ad-hover.hover-dark.ad-thumbnail:after,
 .ad-avatar.ad-hover.hover-dark:after,
 .ad-thumbnail.ad-hover.hover-dark:after {
-  background-color: #222c37; }
+  background-color: #1b232c; }
 .ad-item.ad-hover.hover-white:after, .ad-hover.hover-white.ad-avatar:after, .ad-hover.hover-white.ad-thumbnail:after,
 .ad-avatar.ad-hover.hover-white:after,
 .ad-thumbnail.ad-hover.hover-white:after {
@@ -265,7 +271,7 @@
   text-transform: none;
   font-weight: normal;
   position: absolute;
-  font-size: 14px; }
+  font-size: 13px; }
   .ad-avatar > h2 + p {
     top: 20px; }
 .ad-avatar > p {
@@ -276,7 +282,7 @@
   position: relative;
   left: 0;
   max-width: 85%;
-  font-size: 12px; }
+  font-size: 11px; }
 .ad-avatar.ad-block > img, .ad-avatar.ad-block > .ad-img {
   border-radius: 0; }
 .ad-avatar.ad-sm {
@@ -287,7 +293,26 @@
     height: 35px; }
     .ad-avatar.ad-sm > .ad-img.ad-icon-letter {
       line-height: 35px; }
+  .ad-avatar.ad-sm h2 {
+    font-size: 13px;
+    margin: 4px 0 0 0; }
   .ad-avatar.ad-sm > {
+    width: 35px;
+    height: 35px; }
+.ad-avatar.ad-xs {
+  padding-top: 4px;
+  padding-bottom: 4px; }
+  .ad-avatar.ad-xs > .ad-img {
+    width: 30px;
+    height: 30px; }
+    .ad-avatar.ad-xs > .ad-img.ad-icon-letter {
+      line-height: 30px; }
+  .ad-avatar.ad-xs h2 {
+    font-size: 13px;
+    margin: 6px 0 0 0; }
+  .ad-avatar.ad-xs p {
+    display: none; }
+  .ad-avatar.ad-xs > {
     width: 35px;
     height: 35px; }
 
@@ -352,7 +377,7 @@
   margin: 0;
   text-transform: none;
   font-weight: normal;
-  font-size: 16px; }
+  font-size: 15px; }
   .ad-thumbnail > h2 ~ p {
     top: 20px; }
 .ad-thumbnail > p {
@@ -363,7 +388,7 @@
   position: relative;
   left: 0;
   max-width: 85%;
-  font-size: 12px; }
+  font-size: 11px; }
 .ad-thumbnail.ad-block > img, .ad-thumbnail.ad-block > .ad-img {
   border-radius: 0; }
 .ad-thumbnail.ad-round > img, .ad-thumbnail.ad-round > .ad-img {
