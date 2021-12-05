@@ -57,6 +57,13 @@
         }
     }
 
+    &.ad-ellipse {
+        .ad-item {
+            border-radius: 10px;
+            margin: 3px 0;
+        }
+    }
+
     // Color
     &.ad-strip {
         .ad-item {

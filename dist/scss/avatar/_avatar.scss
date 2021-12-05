@@ -37,6 +37,9 @@
          overflow: hidden;
          @include shadow(0px, 1px, 0.5px, 0.5px, rgba(black, 0.1));
          text-align: center;
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-position: center;
 
          &>img {
              border-radius: 0;
@@ -81,6 +84,14 @@
              border-radius: 0;
          }
      }
+
+     &.ad-ellipse {
+
+        &>img,
+        &>.ad-img {
+            border-radius: 12px;
+        }
+    }
 
      &.ad-sm {
          padding-top: 4px;
