@@ -1,12 +1,12 @@
 //Lists
-.ad-list {
+.#{$classPrefix}-list {
     display: block;
     padding: 0;
     margin: 0;
     list-style: none;
 
-    &.ad-hover {
-        .ad-item {
+    &.#{$classPrefix}-hover {
+        .#{$classPrefix}-item {
             cursor: pointer;
 
             &:after {
@@ -28,53 +28,53 @@
             }
         }
 
-        .ad-avatar:after,
-        .ad-thumbnail:after {
+        .#{$classPrefix}-avatar:after,
+        .#{$classPrefix}-thumbnail:after {
             left: 74px; // right: 16px;
         }
     }
 
     // Size
-    &.ad-sm {
-        .ad-item {
+    &.#{$classPrefix}-sm {
+        .#{$classPrefix}-item {
             padding: 8px 16px !important;
         }
     }
 
     // Shape
-    &.ad-flat {
-        .ad-item {
+    &.#{$classPrefix}-flat {
+        .#{$classPrefix}-item {
             &:before {
                 background-color: transparent;
             }
         }
     }
 
-    &.ad-round {
-        .ad-item {
+    &.#{$classPrefix}-round {
+        .#{$classPrefix}-item {
             border-radius: 30px;
             margin: 3px;
         }
     }
 
-    &.ad-ellipse {
-        .ad-item {
+    &.#{$classPrefix}-ellipse {
+        .#{$classPrefix}-item {
             border-radius: 10px;
             margin: 3px 0;
         }
     }
 
     // Color
-    &.ad-strip {
-        .ad-item {
+    &.#{$classPrefix}-strip {
+        .#{$classPrefix}-item {
             &:nth-child(even) {
                 background-color: rgba($dark, 0.1);
             }
         }
     }
 
-    &.ad-strip-white {
-        .ad-item {
+    &.#{$classPrefix}-strip-white {
+        .#{$classPrefix}-item {
             &:nth-child(even) {
                 background-color: rgba(white, 0.1);
             }

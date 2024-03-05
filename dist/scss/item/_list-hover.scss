@@ -1,82 +1,82 @@
 // hover line color
-.ad-list.ad-hover {
+.#{$classPrefix}-list.#{$classPrefix}-hover {
     &.hover-prim {
 
-        .ad-item,
-        .ad-avatar,
-        .ad-thumbnail {
+        .#{$classPrefix}-item,
+        .#{$classPrefix}-avatar,
+        .#{$classPrefix}-thumbnail {
             @include itemHoverColor($prim);
         }
     }
 
     &.hover-pink {
 
-        .ad-item,
-        .ad-avatar,
-        .ad-thumbnail {
+        .#{$classPrefix}-item,
+        .#{$classPrefix}-avatar,
+        .#{$classPrefix}-thumbnail {
             @include itemHoverColor($pink);
         }
     }
 
     &.hover-tgreen {
 
-        .ad-item,
-        .ad-avatar,
-        .ad-thumbnail {
+        .#{$classPrefix}-item,
+        .#{$classPrefix}-avatar,
+        .#{$classPrefix}-thumbnail {
             @include itemHoverColor($tGreen);
         }
     }
 
     &.hover-yellow {
 
-        .ad-item,
-        .ad-avatar,
-        .ad-thumbnail {
+        .#{$classPrefix}-item,
+        .#{$classPrefix}-avatar,
+        .#{$classPrefix}-thumbnail {
             @include itemHoverColor($yellow);
         }
     }
 
     &.hover-blue {
 
-        .ad-item,
-        .ad-avatar,
-        .ad-thumbnail {
+        .#{$classPrefix}-item,
+        .#{$classPrefix}-avatar,
+        .#{$classPrefix}-thumbnail {
             @include itemHoverColor($blue);
         }
     }
 
     &.hover-red {
 
-        .ad-item,
-        .ad-avatar,
-        .ad-thumbnail {
+        .#{$classPrefix}-item,
+        .#{$classPrefix}-avatar,
+        .#{$classPrefix}-thumbnail {
             @include itemHoverColor($red);
         }
     }
 
     &.hover-green {
 
-        .ad-item,
-        .ad-avatar,
-        .ad-thumbnail {
+        .#{$classPrefix}-item,
+        .#{$classPrefix}-avatar,
+        .#{$classPrefix}-thumbnail {
             @include itemHoverColor($green);
         }
     }
 
     &.hover-dark {
 
-        .ad-item,
-        .ad-avatar,
-        .ad-thumbnail {
+        .#{$classPrefix}-item,
+        .#{$classPrefix}-avatar,
+        .#{$classPrefix}-thumbnail {
             @include itemHoverColor($dark);
         }
     }
 
     &.hover-white {
 
-        .ad-item,
-        .ad-avatar,
-        .ad-thumbnail {
+        .#{$classPrefix}-item,
+        .#{$classPrefix}-avatar,
+        .#{$classPrefix}-thumbnail {
             @include itemHoverColor(white);
         }
     }

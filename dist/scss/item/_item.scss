@@ -1,5 +1,5 @@
 
-  .ad-item {
+  .#{$classPrefix}-item {
     display: block;
     position: relative;
     list-style: none;
@@ -34,7 +34,7 @@
       height: 1px;
       background-color: rgba(black, 0.2);
     }
-    &.ad-hover {
+    &.#{$classPrefix}-hover {
       cursor: pointer;
       &:after {
         content: '';
@@ -53,24 +53,24 @@
         }
       }
     }
-    &.ad-avatar:before {
+    &.#{$classPrefix}-avatar:before {
       left: 74px;
       right: 16px;
     }
-    &.ad-thumbnail:before {
+    &.#{$classPrefix}-thumbnail:before {
       left: 104px;
       right: 16px;
     }
-    &.ad-avatar.ad-hover:after {
+    &.#{$classPrefix}-avatar.#{$classPrefix}-hover:after {
       left: 74px; // right: 16px;
     }
-    &.ad-thumbnail.ad-hover:after {
+    &.#{$classPrefix}-thumbnail.#{$classPrefix}-hover:after {
       left: 104px; // right: 16px;
     }
     i {
       margin-right: 16px;
     }
-    &.ad-badge {
+    &.#{$classPrefix}-badge {
       .badge {
         position: absolute;
         right: 16px;
@@ -85,7 +85,7 @@
         }
       }
     }
-    &.ad-icon {
+    &.#{$classPrefix}-icon {
       & > i {
         display: inline-block;
         vertical-align: top;
@@ -98,32 +98,32 @@
         margin-left: 36px;
       }
     }
-    &.ad-button {
-      & > .ad-btn {
+    &.#{$classPrefix}-button {
+      & > .#{$classPrefix}-btn {
         position: absolute;
         right: 16px;
         float: right; // opacity: 0.7;
         // padding-right: 0;
         // top: 0;
       }
-      & > .ad-btn-group {
+      & > .#{$classPrefix}-btn-group {
         position: absolute;
         right: 16px; // opacity: 0.7;
         padding-right: 0;
         top: 0;
       } // fix top-margin for p presence or h2
-      & > h3 ~ .ad-btn {
+      & > h3 ~ .#{$classPrefix}-btn {
         top: 30%;
       }
-      & > h3 ~ .ad-btn-group {
+      & > h3 ~ .#{$classPrefix}-btn-group {
         top: 20%;
       }
     } //Item Type
-    &.ad-round {
+    &.#{$classPrefix}-round {
       border-radius: 30px;
       margin: 3px;
     }
-    &.ad-flat {
+    &.#{$classPrefix}-flat {
       box-shadow: none;
       text-shadow: none;
       border: none;

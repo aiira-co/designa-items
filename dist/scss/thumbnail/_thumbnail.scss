@@ -1,20 +1,20 @@
 // Thumbnail
-.ad-thumbnail {
-    @extend .ad-item;
+.#{$classPrefix}-thumbnail {
+    @extend .#{$classPrefix}-item;
 
-    &.ad-button {
-        &>.ad-btn {
+    &.#{$classPrefix}-button {
+        &>.#{$classPrefix}-btn {
             top: auto; // line-height: 58px;
             margin-top: 20px;
         }
 
-        &>.ad-btn-group {
+        &>.#{$classPrefix}-btn-group {
             top: auto;
             margin-top: 20px;
         }
     }
 
-    &>.ad-index {
+    &>.#{$classPrefix}-index {
         display: inline-block;
         vertical-align: top;
         width: 30px;
@@ -30,13 +30,13 @@
         text-align: center;
         line-height: 100px;
 
-        &+.ad-img,
+        &+.#{$classPrefix}-img,
         &+img {
             margin-left: 30px;
         }
     }
 
-    &>.ad-img {
+    &>.#{$classPrefix}-img {
         display: inline-block;
         vertical-align: top;
         width: 70px;
@@ -91,18 +91,18 @@
         font-size: $baseFontSize - 2;
     }
 
-    &.ad-block {
+    &.#{$classPrefix}-block {
 
         &>img,
-        &>.ad-img {
+        &>.#{$classPrefix}-img {
             border-radius: 0;
         }
     }
 
-    &.ad-round {
+    &.#{$classPrefix}-round {
 
         &>img,
-        &>.ad-img {
+        &>.#{$classPrefix}-img {
             border-radius: 8px;
         }
     }

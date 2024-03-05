@@ -1,6 +1,6 @@
-.ad-item.ad-hover,
-.ad-avatar.ad-hover,
-.ad-thumbnail.ad-hover {
+.#{$classPrefix}-item.#{$classPrefix}-hover,
+.#{$classPrefix}-avatar.#{$classPrefix}-hover,
+.#{$classPrefix}-thumbnail.#{$classPrefix}-hover {
     &.hover-prim {
         @include itemHoverColor($prim);
     }

@@ -1,13 +1,13 @@
  // Avatar
- .ad-avatar {
-     @extend .ad-item;
+ .#{$classPrefix}-avatar {
+     @extend .#{$classPrefix}-item;
 
-     &.ad-button {
-         &>.ad-btn {
+     &.#{$classPrefix}-button {
+         &>.#{$classPrefix}-btn {
              top: auto;
          }
 
-         &>.ad-btn-group {
+         &>.#{$classPrefix}-btn-group {
              top: auto;
          }
      }
@@ -24,7 +24,7 @@
          @include shadow(0px, 1px, 0.5px, 0.5px, rgba(black, 0.1));
      }
 
-     &>.ad-img {
+     &>.#{$classPrefix}-img {
          display: inline-block;
          vertical-align: top;
          width: 40px;
@@ -46,7 +46,7 @@
              width: 100%;
          }
 
-         &.ad-icon-letter {
+         &.#{$classPrefix}-icon-letter {
              line-height: 40px;
          }
      }
@@ -77,37 +77,37 @@
          font-size: $baseFontSize - 2;
      }
 
-     &.ad-block {
+     &.#{$classPrefix}-block {
 
          &>img,
-         &>.ad-img {
+         &>.#{$classPrefix}-img {
              border-radius: 0;
          }
      }
 
-     &.ad-ellipse {
+     &.#{$classPrefix}-ellipse {
 
         &>img,
-        &>.ad-img {
+        &>.#{$classPrefix}-img {
             border-radius: 12px;
         }
     }
 
-     &.ad-sm {
+     &.#{$classPrefix}-sm {
          padding-top: 4px;
          padding-bottom: 4px;
 
-         &>.ad-img {
+         &>.#{$classPrefix}-img {
              width: 35px;
              height: 35px;
 
-             &.ad-icon-letter {
+             &.#{$classPrefix}-icon-letter {
                  line-height: 35px;
              }
          }
 
          h2 {
-             font-size: 13px;
+             font-size: 0.8125rem;
              margin: 4px 0 0 0;
          }
 
@@ -115,27 +115,27 @@
              //  margin-top:2px;
          }
 
-         &> {
-             width: 35px;
-             height: 35px;
-         }
+        //  &> {
+        //      width: 35px;
+        //      height: 35px;
+        //  }
      }
 
-     &.ad-xs {
+     &.#{$classPrefix}-xs {
          padding-top: 4px;
          padding-bottom: 4px;
 
-         &>.ad-img {
+         &>.#{$classPrefix}-img {
              width: 30px;
              height: 30px;
 
-             &.ad-icon-letter {
+             &.#{$classPrefix}-icon-letter {
                  line-height: 30px;
              }
          }
 
          h2 {
-             font-size: 13px;
+             font-size: 0.8125rem;
              margin: 6px 0 0 0;
          }
 
@@ -144,9 +144,9 @@
              display: none;
          }
 
-         &> {
-             width: 35px;
-             height: 35px;
-         }
+        //  &> {
+        //      width: 35px;
+        //      height: 35px;
+        //  }
      }
  }
