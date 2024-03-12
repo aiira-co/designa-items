@@ -3,7 +3,7 @@
     display: block;
     position: relative;
     list-style: none;
-    padding: 16px;
+    padding: 1.6rem;
     margin: 0;
     @include transEase(0.3s);
     & > h1,
@@ -29,8 +29,8 @@
       position: absolute;
       display: block;
       bottom: 0;
-      left: 16px;
-      right: 16px;
+      left: 1.6rem;
+      right: 1.6rem;
       height: 1px;
       background-color: rgba(black, 0.2);
     }
@@ -41,7 +41,7 @@
         position: absolute;
         display: block;
         bottom: 0;
-        left: 16px;
+        left: 1.6rem;
         right: 100%; // width:0%;
         height: 2px;
         background-color: $prim;
@@ -49,31 +49,31 @@
       }
       &:hover {
         &:after {
-          right: 16px;
+          right: 1.6rem;
         }
       }
     }
     &.#{$classPrefix}-avatar:before {
       left: 74px;
-      right: 16px;
+      right: 1.6rem;
     }
     &.#{$classPrefix}-thumbnail:before {
       left: 104px;
-      right: 16px;
+      right: 1.6rem;
     }
     &.#{$classPrefix}-avatar.#{$classPrefix}-hover:after {
-      left: 74px; // right: 16px;
+      left: 74px; // right: 1.6rem;
     }
     &.#{$classPrefix}-thumbnail.#{$classPrefix}-hover:after {
-      left: 104px; // right: 16px;
+      left: 104px; // right: 1.6rem;
     }
     i {
-      margin-right: 16px;
+      margin-right: 1.6rem;
     }
     &.#{$classPrefix}-badge {
       .badge {
         position: absolute;
-        right: 16px;
+        right: 1.6rem;
         font-size: $baseFontSize - 2;
         opacity: 0.7;
         color: inherit;
@@ -91,7 +91,7 @@
         vertical-align: top;
         color: inherit;
         opacity: 0.8;
-        width: 20px; // background-color:red;
+        width: 2.0rem; // background-color:red;
         // position:absolute;
       }
       & > input {
@@ -101,14 +101,14 @@
     &.#{$classPrefix}-button {
       & > .#{$classPrefix}-btn {
         position: absolute;
-        right: 16px;
+        right: 1.6rem;
         float: right; // opacity: 0.7;
         // padding-right: 0;
         // top: 0;
       }
       & > .#{$classPrefix}-btn-group {
         position: absolute;
-        right: 16px; // opacity: 0.7;
+        right: 1.6rem; // opacity: 0.7;
         padding-right: 0;
         top: 0;
       } // fix top-margin for p presence or h2
@@ -120,8 +120,8 @@
       }
     } //Item Type
     &.#{$classPrefix}-round {
-      border-radius: 30px;
-      margin: 3px;
+      border-radius: 3.0rem;
+      margin: 0.3rem;
     }
     &.#{$classPrefix}-flat {
       box-shadow: none;

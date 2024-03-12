@@ -14,7 +14,7 @@
                 position: absolute;
                 display: block;
                 bottom: 0;
-                left: 16px;
+                left: 1.6rem;
                 right: 100%; // width:0%;
                 height: 2px;
                 background-color: $prim;
@@ -23,21 +23,21 @@
 
             &:hover {
                 &:after {
-                    right: 16px;
+                    right: 1.6rem;
                 }
             }
         }
 
         .#{$classPrefix}-avatar:after,
         .#{$classPrefix}-thumbnail:after {
-            left: 74px; // right: 16px;
+            left: 74px; // right: 1.6rem;
         }
     }
 
     // Size
     &.#{$classPrefix}-sm {
         .#{$classPrefix}-item {
-            padding: 8px 16px !important;
+            padding: 0.8rem 1.6rem !important;
         }
     }
 
@@ -52,15 +52,15 @@
 
     &.#{$classPrefix}-round {
         .#{$classPrefix}-item {
-            border-radius: 30px;
-            margin: 3px;
+            border-radius: 3.0rem;
+            margin: 0.3rem;
         }
     }
 
     &.#{$classPrefix}-ellipse {
         .#{$classPrefix}-item {
             border-radius: 10px;
-            margin: 3px 0;
+            margin: 0.3rem 0;
         }
     }
 
